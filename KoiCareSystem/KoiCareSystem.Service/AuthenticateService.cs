@@ -29,9 +29,6 @@ namespace KoiCareSystem.Service
         {
             try
             {
-                #region Business Rule
-
-                #endregion Business Rule
                 if (string.IsNullOrEmpty(requestLoginDto.Email) || string.IsNullOrEmpty(requestLoginDto.Password))
                 {
                     return new ServiceResult(Const.WARNING_NO_DATA_CODE, Const.WARNING_NO_DATA_MSG);
